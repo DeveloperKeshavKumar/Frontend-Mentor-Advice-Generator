@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/DeveloperKeshavKumar/Frontend-Mentor-Advice-Generator)
-- Live Site URL: [GitHub pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub pages](https://developerkeshavkumar.github.io/Frontend-Mentor-Advice-Generator/)
 
 ## My process
 

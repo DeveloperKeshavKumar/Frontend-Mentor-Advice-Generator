@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Philosopher:wght@400;700&display=swap");
+
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background-color: var(--DarkBlue);
+    font-family: 'Manrope';
+    text-align: center;
+    color: var(--LightCyan);
+}
+
+.container {
+    position: relative;
+    margin: 17% auto;
+    width: 35%;
+    height: 50%;
+    text-wrap: wrap;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 15px;
+}
+
+a,
+.advice-id {
+    text-decoration: none;
+    color: var(--NeonGreen);
+}
+
+.advice-id {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 6% 0 0 0;
+}
+
+.advice-box{
+    padding: 3% 6% 7%;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.advice::before{
+    content:"“";
+}
+
+.advice::after{
+    content: "”";
+}
+
+.divider{
+    width: 90%;
+    margin-bottom: 13%;
+}
+
+#dice{
+    position: absolute;
+    background-color: var(--NeonGreen);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    top: 90%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 15px 16px 12px;
+}
+
+#dice img{
+    width: 1.5rem;
+}
+
+#dice :hover {
+    -webkit-box-shadow: 0 0 30px 10px var(--NeonGreen);
+            box-shadow: 0 0 30px 10px var(--NeonGreen);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    padding-bottom: 1%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (max-width: 530px) {
+    .container{
+        width: 97%;
+        margin-top: 40%;
+    }
+
+    .advice-id{
+        padding-top: 10%;
+        font-size: 0.7rem;
+    }
+
+    .advice-box{
+        font-size: 1.2rem;
+    }
+
+    .divider{
+        -o-object-fit: contain;
+           object-fit: contain;
+        width: 90%;
+        padding-bottom: 5%;
+    }
+    
+    .attribution{
+        font-size: 0.438rem;
+    }
+}
